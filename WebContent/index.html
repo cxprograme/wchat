@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>微信摇一摇</title>
+	<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/iconfont.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/honbao.css">
+	<link rel="stylesheet" href="./css/csshake.min.css">
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script src="./bootstrap/bootstrap.min.js"></script>
+	<script src="./js/howler.min.js"></script>
+	<script src="./js/shake.js"></script>
+	<script src="./js/fastclick.js"></script>
+	<script src="./js/red.js"></script>
+	<script src="./js/zepto.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+		<div id="shake" >
+			<img src="./images/inner.png" class="inner">
+			<img src="./images/shake.png" class="shake_up" id="shakeup">
+			<img src="./images/shake.png" class="shake_down" id="shakedown">
+		</div>
+		<div id="content" class="content" style="display:none">大奖未中。仍需努力</div>
+		<div id="honbao" class="honbao" style="display:none">
+		<!-- <img src="./images/honbao.png"> -->
+		<div class="red"><!-- shake-chunk -->
+			    <span style="background-image: url(./images/red-w.png);"></span>
+			    <button class="redbutton" type="领取红包">拆红包</button>
+			    <div class="red-jg">
+			        <h1>恭喜您！</h1>
+			        <h5>获得iPhone 6s 16g手机一部</h5>
+			    </div>
+			</div>
+		</div>
+		<!-- <div class="controlbar" onclick="javascript:reset();">
+			<img src="./images/sdy.png" width="40" height="53"><br>手动摇
+		</div> -->
+	</div>
+
+	<!-- layer -->
+	<script type="text/javascript" src="layer/layer.js"></script>
+	<script type="text/javascript" src="layer/layer.config.js"></script>
+</body>
+</html>
