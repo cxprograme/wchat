@@ -1,0 +1,181 @@
+@-webkit-keyframes shake-chunk {  
+  
+/*     0%, 100% {-webkit--moz-transform: translateX(0);}  
+    10%, 30%, 50%, 70%, 90% {-webkit--moz-transform: translateX(-10px);}  
+    20%, 40%, 60%, 80% {-webkit--moz-transform: translateX(10px);}   */
+    
+    2% {
+		-webkit--moz-transform: translate(5px, 2px) rotate(-12deg)
+	}
+
+	4% {
+		-webkit--moz-transform: translate(-6px, 3px) rotate(1deg)
+	}
+
+	6% {
+		-webkit--moz-transform: translate(3px, 6px) rotate(14deg)
+	}
+
+	8% {
+		-webkit-transform: translate(1px, 8px) rotate(1deg)
+	}
+
+	10% {
+		-webkit-transform: translate(-5px, 10px) rotate(0deg)
+	}
+
+	12% {
+		-webkit-transform: translate(-11px, 2px) rotate(7deg)
+	}
+
+	14% {
+		-webkit-transform: translate(4px, 15px) rotate(11deg)
+	}
+
+	16% {
+		-webkit-transform: translate(4px, -8px) rotate(15deg)
+	}
+
+	18% {
+		-webkit-transform: translate(-5px, 10px) rotate(1deg)
+	}
+
+	20% {
+		-webkit-transform: translate(-1px, 3px) rotate(15deg)
+	}
+
+	22% {
+		-webkit-transform: translate(-8px, 5px) rotate(-6deg)
+	}
+
+	24% {
+		-webkit-transform: translate(-1px, -9px) rotate(8deg)
+	}
+
+	26% {
+		-webkit-transform: translate(9px, 11px) rotate(-13deg)
+	}
+
+	28% {
+		-webkit-transform: translate(-7px, 4px) rotate(9deg)
+	}
+
+	30% {
+		-webkit-transform: translate(8px, 14px) rotate(9deg)
+	}
+
+	32% {
+		-webkit-transform: translate(-4px, 11px) rotate(-11deg)
+	}
+
+	34% {
+		-webkit-transform: translate(14px, 11px) rotate(-8deg)
+	}
+
+	36% {
+		-webkit-transform: translate(-13px, -8px) rotate(13deg)
+	}
+
+	38% {
+		-webkit-transform: translate(-12px, 1px) rotate(-13deg)
+	}
+
+	0%,40%,100% {
+	-webkit-transform: translate(0, 0) rotate(0)
+	}
+}  
+@-moz-keyframes shake-chunk {  
+/*     0%, 100% {-moz--moz-transform: translateX(0);}  
+    10%, 30%, 50%, 70%, 90% {-moz--moz-transform: translateX(-10px);}  
+    20%, 40%, 60%, 80% {-moz--moz-transform: translateX(10px);}   */
+    2% {
+		-moz-transform: translate(5px, 2px) rotate(-12deg)
+	}
+
+	4% {
+		-moz-transform: translate(-6px, 3px) rotate(1deg)
+	}
+
+	6% {
+		-moz-transform: translate(3px, 6px) rotate(14deg)
+	}
+
+	8% {
+		-moz-transform: translate(1px, 8px) rotate(1deg)
+	}
+
+	10% {
+		-moz-transform: translate(-5px, 10px) rotate(0deg)
+	}
+
+	12% {
+		-moz-transform: translate(-11px, 2px) rotate(7deg)
+	}
+
+	14% {
+		-moz-transform: translate(4px, 15px) rotate(11deg)
+	}
+
+	16% {
+		-moz-transform: translate(4px, -8px) rotate(15deg)
+	}
+
+	18% {
+		-moz-transform: translate(-5px, 10px) rotate(1deg)
+	}
+
+	20% {
+		-moz-transform: translate(-1px, 3px) rotate(15deg)
+	}
+
+	22% {
+		-moz-transform: translate(-8px, 5px) rotate(-6deg)
+	}
+
+	24% {
+		-moz-transform: translate(-1px, -9px) rotate(8deg)
+	}
+
+	26% {
+		-moz-transform: translate(9px, 11px) rotate(-13deg)
+	}
+
+	28% {
+		-moz-transform: translate(-7px, 4px) rotate(9deg)
+	}
+
+	30% {
+		-moz-transform: translate(8px, 14px) rotate(9deg)
+	}
+
+	32% {
+		-moz-transform: translate(-4px, 11px) rotate(-11deg)
+	}
+
+	34% {
+		-moz-transform: translate(14px, 11px) rotate(-8deg)
+	}
+
+	36% {
+		-moz-transform: translate(-13px, -8px) rotate(13deg)
+	}
+
+	38% {
+		-moz-transform: translate(-12px, 1px) rotate(-13deg)
+	}
+
+	0%,40%,100% {
+		-moz-transform: translate(0, 0) rotate(0)
+	}
+}  
+  
+  
+  
+.shake-chunk{  
+    -webkit-animation-name:shake-chunk;  
+    -webkit-animation-duration:4s;  
+    -moz-animation-name:shake-chunk;  
+    -moz-animation-duration:4s;  
+/*      -webkit-animation:shake-chunk 4s ease-in-out infinite;
+     -moz-animation:shake-chunk 4s ease-in-out infinite; */
+    }  

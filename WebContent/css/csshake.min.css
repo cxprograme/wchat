@@ -1563,7 +1563,7 @@
 	animation: shake-crazy 100ms ease-in-out infinite
 }
 
-@keyframes shake-chunk {
+@-webkit-keyframes shake-chunk {
 	2% {
 		transform: translate(5px, 2px) rotate(-12deg)
 	}
@@ -1646,5 +1646,5 @@
 }
 
 .shake-chunk:hover,.shake-trigger:hover .shake-chunk,.shake-chunk.shake-freeze,.shake-chunk.shake-constant {
-	animation: shake-chunk 4s ease-in-out infinite
+	-webkit-animation: shake-chunk 4s ease-in-out infinite
 }
