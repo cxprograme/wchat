@@ -52,7 +52,7 @@ public class Oauth2TokenServlet extends HttpServlet {
 		request.setAttribute("snsUserInfo", snsUserInfo);
 		//将用户信息存入数据库
 		DbUtil.insertUserInfo(snsUserInfo);
-		request.getRequestDispatcher("/index.html").forward(request, response);
+		request.getRequestDispatcher("/shake.html").forward(request, response);
 	}
 
 	/**
