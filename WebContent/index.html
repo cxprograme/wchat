@@ -27,7 +27,7 @@
 			<img src="./images/shake.png" class="shake_down" id="shakedown">
 		</div>
 		<div id="content" class="content" style="display:none">大奖未中。仍需努力</div>
-		<div id="honbao" class="honbao" style="display:block">
+		<div id="honbao" class="honbao" style="display:none">
 		<!-- <img src="./images/honbao.png"> -->
 		<div class="red"><!-- shake-chunk -->
 			    <span style="background-image: url(./images/red-w.png);"></span>
@@ -46,5 +46,47 @@
 	<!-- layer -->
 	<script type="text/javascript" src="layer/layer.js"></script>
 	<script type="text/javascript" src="layer/layer.config.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#honbao").on("click",function(){
+		 $.ajax({
+            	type:'POST',
+            	url:'/wchat/isget',
+            	dataType:'json',
+            	success:function(data){
+            		if(data){
+            			//location.href="/wechat/gethonbao.html";
+            			   $('.redbutton').click(function(){
+            			        // 在带有red样式的div中添加shake-chunk样式
+            			        $('.red').addClass('shake-chunk');
+            			        // 点击按钮2000毫秒后执行以下操作
+            			        setTimeout(function(){
+            			            // 在带有red样式的div中删除shake-chunk样式
+            			            $('.red').removeClass('shake-chunk');
+            			            // 将redbutton按钮隐藏
+            			            $('.redbutton').css("display" , "none");
+            			            // 修改red 下 span   背景图
+            			            $('.red > span').css("background-image" , "url(./images/red-y.png)");
+            			            // 修改red-jg的css显示方式为块
+            			            $('.red-jg').css("display" , "block");
+            			        },2000);
+            			    });
+                     }
+                     else{
+						location.href="/wchat/index.html";
+                     }
+            	}
+            }); 
+			/*  $.post("/wsk/isget",function(data){
+				if(data){
+        			location.href="/wsk/gethonbao.html";
+                 }
+                 else{
+					location.href="/wsk/shake.html";
+                 }
+				},'json');  */
+	});
+	});
+</script>
 </body>
 </html>

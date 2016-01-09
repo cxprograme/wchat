@@ -50,13 +50,19 @@
                 $("#shakeup").animate({ top: "25%" }, 700, function () {
 
                     findsound.play();
-                    if (count>5) {
-                         $("#content").show();
-
-                     }
-                     else{
-                        $("#honbao").show();
-                     }
+                    $.ajax({
+                    	type:'GET',
+                    	url:'/wchat/honbao',
+                    	dataType:'json',
+                    	success:function(data){
+                    		if(data){
+                    			$("#honbao").show();
+                             }
+                             else{
+                                  $("#content").show();
+                    		}
+                    	}
+                    });
 
                 });
             });

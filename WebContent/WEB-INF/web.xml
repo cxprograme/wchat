@@ -9,4 +9,41 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>wechatServlet</servlet-name>
+    <servlet-class>com.ujs.wexin.WeChatServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>wechatServlet</servlet-name>
+    <url-pattern>/wx.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>oauth2TokenServlet</servlet-name>
+  	<servlet-class>com.ujs.wexin.Oauth2TokenServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>oauth2TokenServlet</servlet-name>
+  	<url-pattern>/ot.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>honbaoServlet</servlet-name>
+    <servlet-class>com.ujs.wexin.HonBaoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>honbaoServlet</servlet-name>
+    <url-pattern>/honbao</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>isGetHb</servlet-name>
+    <servlet-class>com.ujs.wexin.IsGetHb</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>isGetHb</servlet-name>
+    <url-pattern>/isget</url-pattern>
+  </servlet-mapping>
 </web-app>
